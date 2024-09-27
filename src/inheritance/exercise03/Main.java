@@ -1,6 +1,6 @@
 package inheritance.exercise03;
 
-public class Main {
+public class    Main {
     public static void main(String[] args) {
         Gerente gerente = new Gerente("Jose", 10000);
         Desenvolvedor desenvolvedor = new Desenvolvedor("Paulo", 7500);

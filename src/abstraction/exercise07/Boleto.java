@@ -1,6 +1,6 @@
 package abstraction.exercise07;
 
-public class CartaoCredito extends FormaPagamento{
+public class Boleto extends FormaPagamento {
     @Override
     public void processarPagamento(double valor) {
 
