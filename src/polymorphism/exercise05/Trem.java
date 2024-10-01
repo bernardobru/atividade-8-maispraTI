@@ -1,6 +1,6 @@
 package polymorphism.exercise05;
 
-public class Trem implements MeioTransporte {
+public class Trem implements IMeioTransporte {
     @Override
     public void acelerar() {
         System.out.println("O maquinista está saindo da estação");

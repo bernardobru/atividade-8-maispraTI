@@ -12,10 +12,10 @@ public class Desconto extends Produto {
 
     public void aplicarDesconto(double porcentagem) {
         if (porcentagem > 0 && porcentagem < 50) {
-            this.precoComDesconto = this.getPreco() * (porcentagem / 100);
-        } else {
             throw new IllegalArgumentException("Porcentagem de desconto não pode ser menor que zero e maior que cinquenta");
         }
+
+        this.precoComDesconto = this.getPreco() * (porcentagem / 100);
     }
 
     public double getPrecoComDesconto() {

@@ -11,6 +11,6 @@ public class Funcionario {
     }
 
     protected void trabalhar() {
-        System.out.printf("O funcionário %s está trabalhando", this.nome);
+        System.out.println("O funcionário " + this.nome + " está trabalhando");
     }
 }

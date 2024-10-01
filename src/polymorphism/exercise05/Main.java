@@ -8,13 +8,15 @@ public class Main {
 
         Trem trem = new Trem();
 
-        MeioTransporte[] meios = new MeioTransporte[3];
+        IMeioTransporte[] meios = new IMeioTransporte[3];
 
         meios[0] = carro;
         meios[1] = bicicleta;
         meios[2] = trem;
 
-        for (MeioTransporte meio : meios) {
+        System.out.println("Polimorfismo com interfaces: \n");
+
+        for (IMeioTransporte meio : meios) {
             meio.acelerar();
             meio.frear();
             System.out.println();

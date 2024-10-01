@@ -1,6 +1,6 @@
 package polymorphism.exercise05;
 
-public class Carro implements MeioTransporte{
+public class Carro implements IMeioTransporte {
     @Override
     public void acelerar() {
         System.out.println("O carro está acelerando a 70km/h");

@@ -11,6 +11,6 @@ public class Desenvolvedor extends Funcionario {
 
     @Override
     public void trabalhar() {
-        System.out.printf("O funcionário %s no cargo de Desenvolvedor está desenvolvendo em seu projeto", this.nome);
+        System.out.println("O funcionário " + this.nome + " no cargo de Desenvolvedor está desenvolvendo em seu projeto");
     }
 }

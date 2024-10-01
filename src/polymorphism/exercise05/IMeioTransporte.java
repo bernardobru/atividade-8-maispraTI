@@ -1,6 +1,6 @@
 package polymorphism.exercise05;
 
-public interface MeioTransporte {
+public interface IMeioTransporte {
     void acelerar();
 
     void frear();

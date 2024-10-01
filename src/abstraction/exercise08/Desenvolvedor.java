@@ -22,6 +22,6 @@ public class Desenvolvedor extends Funcionario{
 
     @Override
     public Funcionario promover() {
-        return new Gerente(this.getNome(), this.getSalario(), "gerente");
+        return new Gerente(this.getNome(), this.getSalario() + 3500, "gerente");
     }
 }

@@ -5,7 +5,11 @@ public class Desenvolvedor extends Funcionario{
         super(nome, salario);
     }
 
+    public String getNome() {
+        return this.nome;
+    }
+
     public float calcularBonus() {
-        return this.salario * (10.0f / 100.0f);
+        return this.salario + this.salario * (10.0f / 100.0f);
     }
 }

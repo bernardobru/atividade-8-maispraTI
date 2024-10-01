@@ -25,7 +25,6 @@ public class Main {
         System.out.println("Produto: " + produto.getNome());
         System.out.println("Preço: R$" + produto.getPreco());
         System.out.println("Quantidade: " + produto.getQuantidade());
-        System.out.println("Preço total: R$" + (produto.getQuantidade() * produto.getPreco()));
         System.out.println();
 
         System.out.println("Aplicar desconto: ");

@@ -11,6 +11,6 @@ public class Gerente extends Funcionario {
 
     @Override
     public void trabalhar() {
-        System.out.printf("O funcionário %s no cargo de Gerente está gerenciando o departamento", this.nome);
+        System.out.println("O funcionário " + this.nome + " no cargo de Gerente está gerenciando o departamento");
     }
 }

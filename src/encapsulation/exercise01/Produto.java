@@ -24,18 +24,18 @@ public class Produto {
     }
 
     public void setPreco(float preco) {
-        if (preco > 0) {
-            this.preco = preco;
-        } else {
+        if (preco < 0) {
             throw new IllegalArgumentException("Valor do preço do produto não pode ser negativo!");
         }
+
+        this.preco = preco;
     }
 
     public void setQuantidade(int quantidade) {
-        if (quantidade > 0) {
-            this.quantidade = quantidade;
-        } else {
+        if (quantidade < 0) {
             throw new IllegalArgumentException("A quantidade de produtos não pode ser negativa!");
         }
+
+        this.quantidade = quantidade;
     }
 }

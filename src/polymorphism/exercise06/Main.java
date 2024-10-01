@@ -10,6 +10,8 @@ public class Main {
         animais.add(new Gato());
         animais.add(new Vaca());
 
+        System.out.println("Polimorfismo com classes abstratas: \n");
+
         animais.forEach(Animal::emitirSom);
     }
 

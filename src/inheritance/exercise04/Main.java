@@ -1,21 +1,40 @@
 package inheritance.exercise04;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Funcionario funcionario = new Funcionario("Perdariseas", 153252353.32f);
+        Scanner sc = new Scanner(System.in);
 
-        Desenvolvedor dev = new Desenvolvedor("Adalberto", 12423.32f);
+        Funcionario func;
+        Desenvolvedor dev;
+        Gerente ger;
 
-        Gerente gerente = new Gerente("Malaquias", 15623.52f);
+        System.out.println("Digite o nome do funcionário: ");
+        String funcNome = sc.nextLine();
+        System.out.println("Digite o salário do funcionário: ");
+        float funcSal = sc.nextFloat();
+        sc.nextLine();
+        func = new Funcionario(funcNome, funcSal);
 
+        System.out.println("Digite o nome do desenvolvedor: ");
+        String devNome = sc.nextLine();
+        System.out.println("Digite o salário do funcionário: ");
+        float devSal = sc.nextFloat();
+        sc.nextLine();
+        dev = new Desenvolvedor(devNome, devSal);
+
+        System.out.println("Digite o nome do gerente: ");
+        String gerNome = sc.nextLine();
+        System.out.println("Digite o salário do funcionário: ");
+        float gerSal = sc.nextFloat();
+        sc.nextLine();
+        ger = new Gerente(gerNome, gerSal);
+
+        System.out.println();
+
+        func.trabalhar();
         dev.trabalhar();
-
-        System.out.println();
-
-        gerente.trabalhar();
-
-        System.out.println();
-
-        funcionario.trabalhar();
+        ger.trabalhar();
     }
 }

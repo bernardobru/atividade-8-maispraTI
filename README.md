@@ -1,11 +1,17 @@
-Atividade 8 do curso fullstack da +praTI
-Sobre
+# Atividade 8 do curso fullstack da +praTI
+## Sobre
 
 São 8 questões sobre os Pilares da Programação Orientada a Objetos (Encapsulamento, Herança, Polimorfismo e Abstração) que devem ser resolvidas em Java.
-Questões
-Lista Simplesmente Encadeada
 
-    Implemente um gerenciador de tarefas onde cada tarefa é um nó em uma lista simplesmente encadeada. Permita que o usuário adicione, remova, e marque tarefas como concluídas.
+## Questões
+
+### Encapsulamento
+
+    Criação de uma Classe Simples
+    - Objetivo : Crie uma classe Produto que represente um produto de uma
+    loja. A classe deve ter atributos privados nome, preco e quantidade em
+    estoque. Implemente métodos públicos para acessar e modificar esses
+    atributos. Garanta que o preço e a quantidade não possam ser negativos.
 
     Crie uma aplicação que simule o histórico de navegação de um navegador utilizando uma lista simplesmente encadeada. Implemente funcionalidades para adicionar novas URLs e remover URLs antigas quando a lista atingir um certo tamanho.
 

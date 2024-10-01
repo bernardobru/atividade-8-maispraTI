@@ -24,25 +24,4 @@ public class Empresa {
     public ArrayList<Funcionario> getFuncionarios() {
         return this.funcionarios;
     }
-
-    public static void main(String[] args) {
-        Empresa empresa = new Empresa();
-
-        empresa.adicionarFuncionario(new Estagiario("joao", 1500, "estagiário"));
-        empresa.adicionarFuncionario(new Desenvolvedor("paulo", 5500, "desenvolvedor"));
-        empresa.adicionarFuncionario(new Gerente("alberto", 8500, "gerente"));
-
-        Funcionario promocao = empresa.getFuncionario(0).promover();
-        System.out.println(empresa.getFuncionario(0).getNome() + empresa.getFuncionario(0).getCargo());
-
-        empresa.setFuncionario(0, promocao);
-        System.out.println(empresa.getFuncionario(0).getNome() + empresa.getFuncionario(0).getCargo());
-
-        System.out.println(empresa.getFuncionario(1).getNome() + " " + empresa.getFuncionario(1).getCargo());
-        Funcionario promoGerente = empresa.getFuncionario(1).promover();
-
-        empresa.setFuncionario(1, promoGerente);
-        System.out.println(empresa.getFuncionario(1).getNome() + " " + empresa.getFuncionario(1).getCargo());
-
-    }
 }
