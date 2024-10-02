@@ -3,7 +3,7 @@ package abstraction.exercise08;
 import java.util.ArrayList;
 
 public class Empresa {
-    private ArrayList<Funcionario> funcionarios = new ArrayList<>();
+    private final ArrayList<Funcionario> funcionarios = new ArrayList<>();
 
     public void adicionarFuncionario(Funcionario func) {
         this.funcionarios.add(func);
@@ -23,5 +23,13 @@ public class Empresa {
 
     public ArrayList<Funcionario> getFuncionarios() {
         return this.funcionarios;
+    }
+
+    public float calcularFolhaPagamento(ArrayList<Funcionario> funcionarios) {
+        float soma = 0;
+        for (Funcionario func : funcionarios) {
+            soma += func.getSalario();
+        }
+        return soma;
     }
 }
